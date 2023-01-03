@@ -1,0 +1,59 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+*{
+    font-family: "Lora", serif;
+}
+
+.main_contact_section{
+    width: 26%;
+    margin: 15rem auto;
+    display: flex;
+    flex-direction: column;
+    align-items: left;
+    justify-content: center;
+    padding: 2rem;
+    gap: 1rem;
+    box-shadow: 0.1rem 0.1rem 1rem 0.3rem rgba(0, 0, 0, 0.382);
+}
+.main_contact_section h2{
+    font-size: 2.5rem;
+    letter-spacing: .1rem;
+    color: rgb(58, 149, 224);
+
+    padding: 1rem 0;
+}
+.main_contact_section h2 span{
+    font-size: 1.8rem;
+    color: rgb(98, 101, 103);
+}
+
+.main_contact_section span{
+    font-size: 1.5rem;
+    color: rgb(110, 110, 110);
+}
+
+.main_contact_section .social_links{
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 0;
+    gap: 1rem;
+}
+.main_contact_section .social_links a img{
+    width: 3.5rem;
+}
+
+.main_contact_section .social_links a img:hover{
+    filter: drop-shadow(.1rem .1rem 1rem rgba(0, 0, 0, 0.797));
+}
+
+@media (max-width: 1270px) {
+    .main_contact_section{
+        width: 50rem;
+    }
+}
+@media (max-width: 571px) {
+    .main_contact_section{
+        width: 80%;
+    }
+}

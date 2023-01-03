@@ -1,0 +1,112 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins&family=Rubik:ital@1&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  position: relative;
+}
+
+nav {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  background-color: rgb(134, 134, 134);
+  padding: 1rem 0;
+}
+
+nav span {
+  font-size: 2rem;
+  color: white;
+  letter-spacing: 0.3rem;
+  margin: 0 1rem;
+}
+
+nav .big_devices_ul {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  list-style-type: none;
+  gap: 2rem;
+}
+
+nav ul li .my_Nav_Links {
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: white;
+  letter-spacing: 0.1rem;
+  font-family: "Rubik", sans-serif;
+}
+
+nav ul li .my_Nav_Links:hover {
+  color: #dde0bd;
+  transition: 0.2s ease-in-out;
+}
+nav ul li a:last-child {
+  margin-right: 1rem;
+}
+
+nav #menu-btn,
+#close-btn {
+  display: none;
+  margin: 0 1rem;
+}
+
+body .mobile_nav {
+  display: none;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  top: 6%;
+  right: 0;
+  width: 50%;
+  height: 50vh;
+  padding: 2.5rem 0;
+  background-color: rgba(82, 82, 82, 0.92);
+  border: none;
+  color: white;
+  z-index: 1;
+}
+body .show_Mobile_Nav {
+  display: flex;
+}
+.mobile_nav .small_devices_ul {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+
+.mobile_nav .small_devices_ul li {
+  list-style-type: none;
+}
+.mobile_nav .small_devices_ul li .mobile_Nav_Links {
+  text-decoration: none;
+  font-family: "Rubik", sans-serif;
+  font-size: 1.8rem;
+  color: white;
+}
+
+
+@media (max-width: 750px) {
+  nav #menu-btn {
+    display: block;
+  }
+  nav .big_devices_ul {
+    display: none;
+  }
+}

@@ -1,0 +1,209 @@
+@import url("https://fonts.googleapis.com/css2?family=Lora&display=swap");
+html {
+  font-size: 62.5%;
+}
+.main_container {
+  width: 100%;
+  height: 92.5vh;
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(245, 245, 245);
+}
+.main_container .main_content_section {
+  width: 75%;
+  height: 100%;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 2rem;
+  position: relative;
+}
+
+.main_container .main_content_section h1 {
+  font-size: 2rem;
+  font-family: "Lora", serif;
+  letter-spacing: 0.1rem;
+  padding: 2rem 0;
+  text-transform: capitalize;
+  color: rgb(58, 149, 224);
+}
+.main_container .main_content_section h1 span {
+  color: #808080e1;
+  font-size: 1.6rem;
+}
+
+.main_container .main_content_section textarea {
+  width: 66%;
+  border: none;
+  resize: none;
+  box-shadow: 0.1rem 0.1rem 1rem 0.3rem rgba(0, 0, 0, 0.382);
+  height: 35rem;
+  border-radius: 0.5rem;
+  font-size: 1.5rem;
+  padding: 0.5rem;
+  outline-color: rgb(175, 216, 249);
+}
+.main_container .main_content_section .btns_container {
+  width: 80%;
+  padding: 2.5rem 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+}
+.main_container .main_content_section .btns_container #right_side_arrow {
+  position: absolute;
+  right: 4%;
+  width: 2.5rem;
+  cursor: pointer;
+}
+.main_container .main_content_section .btns_container #left_side_arrow {
+  position: absolute;
+  left: 4%;
+  width: 2.5rem;
+  cursor: pointer;
+}
+.main_container .main_content_section .btns_container .btns_inside {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+}
+.main_container .main_content_section .format_styles_right {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 2rem;
+  position: absolute;
+  right: 10%;
+}
+
+#alertMsg {
+  width: 30rem;
+  height: 6rem;
+  display: none;
+  align-items: center;
+  justify-content: space-between;
+  box-shadow: 0.1rem 0.1rem 0.8rem 0.2rem rgba(0, 0, 0, 0.598);
+  background-color: wheat;
+  position: absolute;
+  transition: 0.2s;
+  top: 5%;
+  left: 40%;
+}
+
+#alertMsg span {
+  font-size: 1.5rem;
+  color: rgb(54, 54, 54);
+  margin: 0 1rem;
+}
+#alertMsg img {
+  width: 1.5rem;
+  margin: 0 1rem;
+  cursor: pointer;
+}
+.main_container .main_content_section .btns_container .btns_inside button {
+  padding: 1rem 2rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: #3a95e0;
+  color: white;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+}
+.main_container .main_content_section .format_styles_right button {
+  padding: 1rem 0;
+  width: 4rem;
+  border-radius: 0.5rem;
+  border: none;
+  color: white;
+  font-size: 1.3rem;
+  letter-spacing: 0.1rem;
+  background-color: rgba(38, 38, 38, 0.871);
+  font-weight: bold;
+}
+.main_container .main_content_section .format_styles_right button img {
+  width: 1.5rem;
+}
+
+.main_container .main_content_section .format_styles_right button:hover {
+  cursor: pointer;
+  background-color: rgba(0, 0, 0, 0.758);
+  box-shadow: 0.1rem 0.1rem 0.8rem 0.2rem rgba(0, 0, 0, 0.598);
+}
+.main_container
+  .main_content_section
+  .btns_container
+  .btns_inside
+  button:hover {
+  background-color: rgb(75, 171, 249);
+  box-shadow: 0.1rem 0.1rem 0.8rem 0.2rem rgba(0, 0, 0, 0.382);
+}
+
+@media (max-width: 1200px) {
+  .main_container .main_content_section textarea {
+    width: 80%;
+  }
+  .main_container .main_content_section .format_styles_right {
+    right: 3%;
+  }
+}
+@media (max-width: 980px) {
+  .main_container .main_content_section {
+    width: 100%;
+  }
+  .main_container .main_content_section textarea {
+    width: 80%;
+  }
+  .main_container .main_content_section .format_styles_right {
+    right: 2rem;
+  }
+  .main_container .main_content_section .btns_container {
+    width: 100%;
+  }
+}
+@media (max-width: 700px) {
+  html {
+    font-size: 45.2%;
+  }
+}
+@media (max-width: 600px) {
+  .main_container .main_content_section .btns_container {
+    margin: 8rem 0 2rem 0;
+  }
+  .main_container .main_content_section .btns_container .btns_inside {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .main_container .main_content_section .btns_container .btns_inside button {
+    width: 20rem;
+    padding: 1rem;
+  }
+  .main_container .main_content_section .format_styles_right {
+    flex-direction: row;
+    width: 100%;
+    right: 0;
+    bottom: 28.5%;
+  }
+  .main_container .main_content_section textarea {
+    width: 95%;
+  }
+}
+@media (max-width: 500px) {
+  .main_container .main_content_section .btns_container .btns_inside button {
+    width: 14rem;
+  }
+}
+
+@media (max-width: 345px) {
+  .main_container .main_content_section .btns_container .btns_container {
+    gap: 1rem;
+  }
+  .main_container .main_content_section .btns_container .btns_inside button {
+    width: 13rem;
+    font-size: 1.2rem;
+  }
+}
